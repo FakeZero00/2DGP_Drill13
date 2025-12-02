@@ -30,8 +30,8 @@ def init():
     common.boy = Boy()
     game_world.add_object(common.boy, 1)
 
-    ball = [Ball(x, y) for x, y in (random.randint(100, 700), random.randint(100, 500)) for _ in range(100)]
-
+    ball = [Ball(random.randint(0, common.court.w), random.randint(0, common.court.h)) for _ in range(100)]
+    game_world.add_objects(ball, 1)
 
 def finish():
     game_world.clear()
