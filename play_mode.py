@@ -1,3 +1,4 @@
+#Drill #13 제출 - 2022182034 임성진
 import random
 from pico2d import *
 from ball import Ball
